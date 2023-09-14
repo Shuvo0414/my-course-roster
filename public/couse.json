@@ -1,0 +1,75 @@
+[
+    {
+        "id" : 1,
+        "image": "https://i.ibb.co/fpm6yfV/Rectangle-2-2.png",
+      "title": "Introduction to C Programming",
+      "course_details": "This course provides a comprehensive introduction to the C programming language. You will learn the fundamentals of C, including syntax, data types, control structures, and functions. By the end of this course, you will have a solid foundation in C programming, making it easier to pursue more advanced topics in software development.",
+      "price": 15000,
+      "credit": 1
+    },
+    {
+        "id" : 2,
+      "image": "https://i.ibb.co/wQydmB1/Rectangle-2-3.png",
+      "title": "Introduction to Algorithms",
+      "course_details": "In this course, you'll delve into the fascinating world of algorithms and problem-solving techniques. We'll cover a wide range of algorithms and data structures, equipping you with the skills needed to tackle complex computational problems. Whether you're a beginner or an experienced programmer, this course will sharpen your algorithmic thinking.",
+      "price": 25000,
+      "credit": 2
+    },
+    {
+        "id" : 3,
+      "image": "https://i.ibb.co/B6mFVTg/Rectangle-2-4.png",
+      "title": "Introduction to C++ for DSA (data structures and algorithms)",
+      "course_details": "Master C++ programming with a focus on data structures and algorithms. This course is designed to help you become proficient in C++ and apply your knowledge to solve real-world problems efficiently. You'll explore advanced data structures, algorithm design, and optimization techniques.",
+      "price": 10000,
+      "credit": 10
+    },
+    {
+        "id" : 4,
+      "image": "https://i.ibb.co/tsZgkMj/Rectangle-3.png",
+      "title": "Basic Data Structures",
+      "course_details": "This course is your gateway to understanding essential data structures used in software development. You'll explore data structures such as arrays, linked lists, stacks, and queues, and learn how to implement them in code. These fundamental concepts are the building blocks for more complex algorithms and applications.",
+      "price": 35000,
+      "credit": 5
+    },
+    {
+        "id" : 5,
+      "image": "https://i.ibb.co/jVyZDfw/Rectangle-2.png",
+      "title": "Introduction to Object-Oriented Programming (OOP) with Python",
+      "course_details": "Discover the power of Python and dive into the world of object-oriented programming (OOP). In this course, you'll learn how to design and create Python programs using OOP principles. Whether you're a beginner or have some programming experience, this course will enhance your Python skills.",
+      "price": 19000,
+      "credit": 5
+    },
+    {
+        "id" : 6,
+      "image": "https://i.ibb.co/PW3q0ww/Rectangle-2-5.png",
+      "title": "Software Engineering Fundamentals",
+      "course_details": "This course provides a deep dive into the principles of software engineering. You'll learn about software development methodologies, project management, testing, and quality assurance. Gain the knowledge and skills needed to excel in software engineering projects.",
+      "price": 23000,
+      "credit": 2
+    },
+    {
+        "id" : 7,
+      "image": "https://i.ibb.co/3drs21D/Rectangle-3-1.png",
+      "title": "AWS (Amazon Web Services) Essentials",
+      "course_details": "Embark on your cloud computing journey with our AWS Essentials course. Learn how to set up and manage cloud resources on Amazon Web Services. This hands-on course will teach you the basics of AWS services and how to deploy scalable applications in the cloud.",
+      "price": 35000,
+      "credit": 5
+    },
+    {
+        "id" : 8,
+      "image": "https://i.ibb.co/6PNxGfh/Rectangle-2-1.png",
+      "title": "Cloud Computing Fundamentals",
+      "course_details": "Explore the foundational concepts of cloud computing in this course. You'll gain a solid understanding of cloud deployment models, service models, and key cloud providers. Whether you're new to cloud computing or want to deepen your knowledge, this course is for you.",
+      "price": 19000,
+      "credit": 5
+    },
+    {
+        "id" : 9,
+      "image": "https://i.ibb.co/DG9xvz1/Rectangle-2-6.png",
+      "title": "Database Management with MySQL",
+      "course_details": "Master the art of database management with MySQL. This course covers database design, SQL queries, and administration tasks. You'll learn how to create and optimize databases, ensuring data reliability and performance.",
+      "price": 23000,
+      "credit": 2
+    }
+  ]
+  
