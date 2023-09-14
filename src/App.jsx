@@ -10,8 +10,13 @@ function App() {
 
   // handle btn
   const handleToAddCart = (blog) => {
-    const newCarts = [...carts, blog];
-    setCarts(newCarts);
+    const isCourseIteamInCart = carts.find((cart) => cart.id === blog.id);
+    if (isCourseIteamInCart) {
+      alert("Course already added to cart!");
+    } else {
+      const newCarts = [...carts, blog];
+      setCarts(newCarts);
+    }
   };
   return (
     <>
