@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleToAddCart }) => {
   const { image, title, course_details, price, credit } = blog;
-  console.log(blog);
+  //   console.log(blog);
   return (
     <div className="  bg-white rounded-xl shadow-lg">
       <div className=" w-[312px] p-4">
@@ -19,7 +19,10 @@ const Blog = ({ blog }) => {
             Credit: {credit}hr
           </span>
         </div>
-        <button className=" mt-6 w-[280px] py-2 rounded-lg bg-[#2F80ED] text-white">
+        <button
+          onClick={() => handleToAddCart(blog)}
+          className=" mt-6 w-[280px] py-2 rounded-lg bg-[#2F80ED] text-white"
+        >
           Select
         </button>
       </div>
@@ -29,6 +32,7 @@ const Blog = ({ blog }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleToAddCart: PropTypes.func.isRequired,
 };
 
 export default Blog;
