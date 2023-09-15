@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { FaBookOpen } from "react-icons/fa";
+import { BsBook } from "react-icons/bs";
 const Blog = ({ blog, handleToAddCart }) => {
   const { image, title, course_details, price, credit } = blog;
   //   console.log(blog);
@@ -21,7 +21,7 @@ const Blog = ({ blog, handleToAddCart }) => {
             </p>
           </div>
           <div className=" flex gap-4 mt-5">
-            <FaBookOpen></FaBookOpen>
+            <BsBook></BsBook>
             <span className=" text-sm font-medium text-[#1C1B1B99]">
               Credit: {credit}hr
             </span>

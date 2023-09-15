@@ -10,6 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 function App() {
   const [carts, setCarts] = useState([]);
   const [totalCreditHours, setTotalCreditHours] = useState(0);
+  const [totaPrice, setTotalPrice] = useState(0);
 
   // handle btn
   const handleToAddCart = (blog) => {
@@ -29,6 +30,7 @@ function App() {
         const newCarts = [...carts, blog];
         setCarts(newCarts);
         setTotalCreditHours(totalCreditHours + blog.credit);
+        setTotalPrice(totaPrice + blog.price);
       } else {
         toast("You don't have enough credit hours to add this course.", {
           position: "top-center",
@@ -41,20 +43,27 @@ function App() {
   };
   useEffect(() => {
     if (totalCreditHours === 20) {
-      toast("You have reached the maximum credit hours (20)!", {
-        position: "top-center",
-        style: {
-          width: "450px",
-        },
-      });
+      toast(
+        "You have used all your remaining credit hours. Now your remaining hour is(0)",
+        {
+          position: "top-center",
+          style: {
+            width: "450px",
+          },
+        }
+      );
     }
   }, [totalCreditHours]);
   return (
     <>
       <Header></Header>
-      <main className=" container mx-auto px-8 md:px-10 lg:px-24 p-5 my-10 flex gap-8 border border-red-500">
+      <main className=" container mx-auto px-8 md:px-10 lg:px-24 p-5 my-10 flex gap-8 ">
         <Blogs handleToAddCart={handleToAddCart}></Blogs>
-        <Carts carts={carts} totalCreditHours={totalCreditHours}></Carts>
+        <Carts
+          carts={carts}
+          totalCreditHours={totalCreditHours}
+          totaPrice={totaPrice}
+        ></Carts>
         <ToastContainer></ToastContainer>
       </main>
     </>

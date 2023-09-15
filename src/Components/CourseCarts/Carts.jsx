@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Cart from "../CourseCart/Cart";
 
-const Carts = ({ carts, totalCreditHours }) => {
+const Carts = ({ carts, totalCreditHours, totaPrice }) => {
   let totalCredits = 0;
   for (const cart of carts) {
     totalCredits += cart.credit;
@@ -28,6 +28,12 @@ const Carts = ({ carts, totalCreditHours }) => {
             Total Credit Hour : {totalCreditHours}
           </p>
         </div>
+        <hr className=" w-[264px] mx-auto mt-6" />
+        <div>
+          <p className=" text-base font-medium text-[#1C1B1B99] mt-4">
+            Total Price : {totaPrice} USD
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -36,6 +42,7 @@ const Carts = ({ carts, totalCreditHours }) => {
 Carts.propTypes = {
   carts: PropTypes.array.isRequired,
   totalCreditHours: PropTypes.number.isRequired,
+  totaPrice: PropTypes.number.isRequired,
 };
 
 export default Carts;
