@@ -19,7 +19,7 @@
         "id" : 3,
       "image": "https://i.ibb.co/B6mFVTg/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "course_details": "Master C++ programming with a focus on data structures and algorithms. This course is designed to help you become proficient in C++ and apply your knowledge to solve real-world problems efficiently. You'll explore advanced data structures, algorithm design, and optimization techniques.",
+      "course_details": "Master C++ programming with a focus on data structures and algorithms. This course is designed to help you become proficient in C++ and apply your knowledge to solve real-world problems efficiently. You'll explore advanced data structures, algorithm design, and optimization techniques, equipping you with valuable skills.",
       "price": 10000,
       "credit": 10
     },
@@ -35,7 +35,7 @@
         "id" : 5,
       "image": "https://i.ibb.co/jVyZDfw/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "course_details": "Discover the power of Python and dive into the world of object-oriented programming (OOP). In this course, you'll learn how to design and create Python programs using OOP principles. Whether you're a beginner or have some programming experience, this course will enhance your Python skills.",
+      "course_details": "Discover the power of Python and dive into the world of object-oriented programming (OOP). In this course, you'll learn how to design and create Python programs using OOP principles. Whether you're a beginner or have some programming experience, this course will enhance your Python skills and proficiency.",
       "price": 19000,
       "credit": 5
     },
@@ -43,7 +43,7 @@
         "id" : 6,
       "image": "https://i.ibb.co/PW3q0ww/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "course_details": "This course provides a deep dive into the principles of software engineering. You'll learn about software development methodologies, project management, testing, and quality assurance. Gain the knowledge and skills needed to excel in software engineering projects.",
+      "course_details": "This course offers an extensive exploration of software engineering principles, covering software development methodologies, project management, testing, and quality assurance. By acquiring these essential skills and knowledge, you'll be well-prepared to excel in complex software engineering projects",
       "price": 23000,
       "credit": 2
     },
@@ -67,7 +67,7 @@
         "id" : 9,
       "image": "https://i.ibb.co/DG9xvz1/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
-      "course_details": "Master the art of database management with MySQL. This course covers database design, SQL queries, and administration tasks. You'll learn how to create and optimize databases, ensuring data reliability and performance.",
+      "course_details": "Master the art of database management with MySQL. This comprehensive course covers database design, SQL queries, and essential administration tasks. You'll gain the skills to create and optimize databases, ensuring data reliability and top-notch performance.",
       "price": 23000,
       "credit": 2
     }

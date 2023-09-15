@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import { FaBookOpen } from "react-icons/fa";
 const Blog = ({ blog, handleToAddCart }) => {
   const { image, title, course_details, price, credit } = blog;
   //   console.log(blog);
@@ -12,12 +12,20 @@ const Blog = ({ blog, handleToAddCart }) => {
           {course_details}
         </p>
         <div className=" flex justify-between items-center">
-          <p className=" text-base font-medium text-[#1C1B1B99] mt-4">
-            <span>$ Price:</span> {price}
-          </p>
-          <span className=" text-sm font-medium text-[#1C1B1B99]">
-            Credit: {credit}hr
-          </span>
+          <div>
+            <p className=" text-base font-medium text-[#1C1B1B99] mt-4">
+              <span>
+                <span className=" text-black">$</span> Price:
+              </span>{" "}
+              {price}
+            </p>
+          </div>
+          <div className=" flex gap-4 mt-5">
+            <FaBookOpen></FaBookOpen>
+            <span className=" text-sm font-medium text-[#1C1B1B99]">
+              Credit: {credit}hr
+            </span>
+          </div>
         </div>
         <button
           onClick={() => handleToAddCart(blog)}

@@ -1,25 +1,26 @@
 import PropTypes from "prop-types";
 import Cart from "../CourseCart/Cart";
 
-const Carts = ({ carts }) => {
-  let totalCreditHours = 0;
+const Carts = ({ carts, totalCreditHours }) => {
+  let totalCredits = 0;
   for (const cart of carts) {
-    totalCreditHours += cart.credit;
+    totalCredits += cart.credit;
   }
+  const remainingCreditHours = 20 - totalCredits;
 
   return (
     <div>
-      <div className="mt-6 p-6">
+      <div className="mt-6 p-4">
         <h1 className="text-xl font-bold text-[#2F80ED]">
-          Credit Hour Remaining {20 - totalCreditHours} hr
+          Credit Hour Remaining {remainingCreditHours} hr
         </h1>
       </div>
       <hr className=" w-[264px] mx-auto" />
       <div className=" w-[312px] bg-white rounded-xl shadow-lg  p-6">
         <h1 className=" text-xl font-bold">Course Name</h1>
 
-        {carts.map((cart) => (
-          <Cart key={cart.id} cart={cart}></Cart>
+        {carts.map((cart, index) => (
+          <Cart key={cart.id} cart={cart} index={index}></Cart>
         ))}
         <hr className=" w-[264px] mx-auto mt-6" />
         <div>
@@ -34,6 +35,7 @@ const Carts = ({ carts }) => {
 
 Carts.propTypes = {
   carts: PropTypes.array.isRequired,
+  totalCreditHours: PropTypes.number.isRequired,
 };
 
 export default Carts;
