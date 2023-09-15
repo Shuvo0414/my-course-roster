@@ -30,7 +30,9 @@ function App() {
         const newCarts = [...carts, blog];
         setCarts(newCarts);
         setTotalCreditHours(totalCreditHours + blog.credit);
-        setTotalPrice(totaPrice + blog.price);
+        if (!toast.isActive("true")) {
+          setTotalPrice(totaPrice + blog.price);
+        }
       } else {
         toast("You don't have enough credit hours to add this course.", {
           position: "top-center",
