@@ -15,7 +15,7 @@ const Carts = ({ carts, totalCreditHours, totaPrice }) => {
           Credit Hour Remaining {remainingCreditHours} hr
         </h1>
       </div>
-      <hr className=" w-[264px] mx-auto" />
+      <hr className=" w-[264px] mx-0 lg:mx-auto" />
       <div className=" w-[312px] bg-white rounded-xl shadow-lg  p-6">
         <h1 className=" text-xl font-bold">Course Name</h1>
 
