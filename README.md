@@ -15,3 +15,5 @@
 # Discuss how i managed the state in my assignment project.
 
 - In my assignment project, I used React's useState hook to create and update state variables. I triggered state changes in response to user interactions, like adding items to a shopping cart. I also implemented state validation to ensure data integrity and used conditional rendering to display content based on the current state. Additionally, I utilized React's component lifecycle to handle side effects and provide real-time feedback to users, enhancing the overall user experience.
+
+## Live Site: [https://whimsical-sorbet-d3d3c0.netlify.app]
